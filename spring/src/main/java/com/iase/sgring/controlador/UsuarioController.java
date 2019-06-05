@@ -56,10 +56,10 @@ public class UsuarioController {
         Usuario usuario = new Usuario();
         usuario.setNombre(nombre);
         usuario.setContrasena(contrasena);
-        usuario.setContrasena(pais);
-        usuario.setContrasena(ciudad);
-        usuario.setContrasena(correo);
-        usuario.setContrasena(telefono);
+        usuario.setPais(pais);
+        usuario.setCiudad(ciudad);
+        usuario.setCorreo(correo);
+        usuario.setTelefono(Integer.parseInt(telefono));
         repository.save(usuario);
     }
 
